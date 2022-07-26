@@ -2,14 +2,13 @@
   "name": "UL extension",
   "description": "A dump extension for a stupid joke",
   "version": "0.0.1",
-  "permissions": ["activeTab", "tabs"],
+  "permissions": [],
   "content_scripts": [
     {
       "matches": ["*://*/*"],
       "js": ["content-script.js"]
     }
   ],
-  "host_permissions": ["*://*/*"],
   "action": {
     "default_title": "UL extension"
   },
