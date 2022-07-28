@@ -1,16 +1,19 @@
 {
   "name": "UL extension",
-  "description": "A dump extension for a stupid joke",
+  "description": "Displays 3 \"UL\" texts in the screen corners.",
   "version": "0.0.1",
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["content-script.js"]
     }
   ],
   "action": {
     "default_title": "UL extension"
+  },
+  "icons": {
+    "128": "icon.png"
   },
   "manifest_version": 3
 }
